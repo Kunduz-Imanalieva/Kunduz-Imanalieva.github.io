@@ -11,5 +11,7 @@ button.addEventListener("mousedown", function () {
   let spanMessage = document.createElement("span");
   let div = document.createElement("div");
 
-  
+  document.body.append(div);
+  div.append(spanName, spanMessage);
+
 });
