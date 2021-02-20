@@ -7,4 +7,9 @@ button.addEventListener("mousedown", function () {
   //   console.log(messageInput.value);
   //   console.log(colorInput.value);
 
+  let spanName = document.createElement("span");
+  let spanMessage = document.createElement("span");
+  let div = document.createElement("div");
+
+  
 });
