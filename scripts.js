@@ -13,5 +13,9 @@ button.addEventListener("mousedown", function () {
 
   document.body.append(div);
   div.append(spanName, spanMessage);
+  spanName.innerText = nameInput.value + ": ";
+  spanMessage.innerText = messageInput.value;
+  spanName.style.color = colorInput.value;
+
 
 });
