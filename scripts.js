@@ -17,5 +17,12 @@ button.addEventListener("mousedown", function () {
   spanMessage.innerText = messageInput.value;
   spanName.style.color = colorInput.value;
 
-
+  fetch("https://live-chat-a9241-default-rtdb.firebaseio.com/chat.json", {
+    method: "POST",
+    body: JSON.stringify({
+      nameInput: nameInput.value,
+      messageInput: messageInput.value,
+      colorInput: colorInput.value,
+    }),
+  });
 });
